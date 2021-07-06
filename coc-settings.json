@@ -1,0 +1,19 @@
+{
+  "coc.preferences.formatOnSaveFiletypes": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "json",
+    "html",
+    "css",
+    "scss"
+  ],
+  "tsserver.formatOnType": true,
+  "coc.preferences.formatOnType": true,
+  "diagnostic.errorSign": "🥵",
+  "diagnostic.warningSign": "😱",
+  "diagnostic.infoSign": "🙄",
+  "explorer.file.showHiddenFiles": true,
+  "explorer.icon.enableNerdfont": true
+}
