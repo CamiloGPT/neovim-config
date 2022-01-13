@@ -2,7 +2,6 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'pangloss/vim-javascript'
 Plug 'HerringtonDarkholme/yats.vim'
-Plug 'mxw/vim-jsx'
 Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
 Plug 'jparise/vim-graphql'
 Plug 'sainnhe/gruvbox-material'
@@ -10,13 +9,14 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'airblade/vim-gitgutter'
 Plug 'neoclide/coc.nvim', {'branch': 'master', 'do': 'yarn install --frozen-lockfile'}
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 
 let g:coc_global_extensions = [
   \ 'coc-tsserver',
   \ 'coc-prettier',
   \ 'coc-explorer',
   \ 'coc-git',
-  \ 'coc-tslint',
   \ 'coc-html',
   \ 'coc-json',
   \ 'coc-eslint',
@@ -42,10 +42,8 @@ if isdirectory('./node_modules') && isdirectory('./node_modules/eslint')
   let g:coc_global_extensions += ['coc-eslint']
 endif
 
-if has('termguicolors')
-          set termguicolors
-        endif
 
+set termguicolors
 set background=dark
 colorscheme gruvbox-material
 set number

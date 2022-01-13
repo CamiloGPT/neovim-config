@@ -7,13 +7,18 @@
     "json",
     "html",
     "css",
-    "scss"
+    "scss",
+    "tsx"
   ],
+  "tsserver.enable": true,
   "tsserver.formatOnType": true,
+  "typescript.suggest.autoImports": true,
   "coc.preferences.formatOnType": true,
+  "coc.preferences.semanticTokensHighlights": false,
   "diagnostic.errorSign": "🥵",
   "diagnostic.warningSign": "😱",
   "diagnostic.infoSign": "🙄",
   "explorer.file.showHiddenFiles": true,
-  "explorer.icon.enableNerdfont": true
+  "explorer.icon.enableNerdfont": true,
+  "explorer.width": 35
 }
