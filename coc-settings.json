@@ -8,17 +8,20 @@
     "html",
     "css",
     "scss",
-    "tsx"
+    "tsx",
+    "rs",
+    "astro",
+    "python"
   ],
   "tsserver.enable": true,
   "tsserver.formatOnType": true,
   "typescript.suggest.autoImports": true,
   "coc.preferences.formatOnType": true,
-  "coc.preferences.semanticTokensHighlights": false,
   "diagnostic.errorSign": "🥵",
   "diagnostic.warningSign": "😱",
   "diagnostic.infoSign": "🙄",
   "explorer.file.showHiddenFiles": true,
   "explorer.icon.enableNerdfont": true,
+  "explorer.git.enable": true,
   "explorer.width": 35
 }
