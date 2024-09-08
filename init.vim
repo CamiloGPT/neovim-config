@@ -113,6 +113,12 @@ nmap <C-s> :write<CR>
 
 nnoremap <esc> :noh<return><esc>
 
+" GoTo code navigation
+nmap <silent> gd <Plug>(coc-definition)
+nmap <silent> gy <Plug>(coc-type-definition)
+nmap <silent> gi <Plug>(coc-implementation)
+nmap <silent> gr <Plug>(coc-references)
+
 
 let g:gitgutter_sign_added = '✚'
 let g:gitgutter_sign_modified = '✹'
@@ -121,3 +127,7 @@ let g:gitgutter_sign_removed_first_line = '-'
 let g:gitgutter_sign_modified_removed = '-'
 
 let g:rustfmt_autosave = 1
+
+let g:coc_node_path = '/home/camilogpt/.nvm/versions/node/v20.10.0/bin/node'
+let g:python3_host_prog = '/usr/bin/python3'
+

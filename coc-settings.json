@@ -1,20 +1,29 @@
 {
-  "coc.preferences.formatOnSaveFiletypes": [
+  //  "prettier.tabWidth": 2,
+  //  	"prettier.useTabs": true,
+  //  	"prettier.semi": false,
+  //  "prettier.singleQuote": true,
+  "prettier.filetypes": [
     "javascript",
     "javascriptreact",
     "typescript",
     "typescriptreact",
-    "json",
-    "html",
-    "css",
-    "scss",
-    "tsx",
-    "rs",
-    "astro",
-    "python"
+    "python",
+    "json"
   ],
+  // "coc.preferences.formatOnSaveFiletypes": [
+  //   "javascript",
+  //   "typescript",
+  //   "python",
+  //   "rust",
+  //   "json"
+  // ],
+  "eslint.enable": true,
+  "eslint.lintTask.options": [".ts", ".js"],
+  "eslint.options": {
+    "overrideConfigFile": "./eslint.config.mjs"
+  },
   "tsserver.enable": true,
-  "tsserver.formatOnType": true,
   "typescript.suggest.autoImports": true,
   "coc.preferences.formatOnType": true,
   "diagnostic.errorSign": "🥵",
@@ -23,5 +32,7 @@
   "explorer.file.showHiddenFiles": true,
   "explorer.icon.enableNerdfont": true,
   "explorer.git.enable": true,
-  "explorer.width": 35
+  "explorer.width": 35,
+  "rust-analyzer.enable": true,
+  "rust-analyzer.server.path": "~/.cargo/bin/rust-analyzer"
 }
